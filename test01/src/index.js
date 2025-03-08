@@ -1,7 +1,7 @@
 import React from 'react';
+import ReactDOM from "react-dom/client";
 import './index.css';
-import UserProfile from "./Props01"
-import Items from "./Prop02"
+import Items from "./Props02.js";
 
 const sampleItems = [
     { id: 1, name: "りんご", isVisible: true },
@@ -13,5 +13,5 @@ const sampleItems = [
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Itmes/>
+  <Items item={sampleItems} />
 );
